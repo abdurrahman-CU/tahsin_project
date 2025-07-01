@@ -2,93 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacked</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       background: black;
       color: #00ff00;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: center;
-      animation: flicker 1s infinite alternate;
-    }
-  
-    main {
-      flex: 1;
+      font-family: 'Courier New', monospace;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    
-    }
-
-        img{
-      max-width: 300px;
-      margin-bottom: 20px;
+      min-height: 100vh;
+      text-align: center;
     }
 
     h1 {
-      font-size: 3em;
-      margin-top: 20vh;
+      font-size: 2rem;
+      color: #00ff00;
+      margin: 0.5rem 0;
+    }
+
+    h1 span {
+      color: red;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin: 1rem 0;
     }
 
     p {
-      font-size: 1.2em;
-      margin: 20px;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      max-width: 90%;
     }
 
-    .glitch {
-      color: red;
-      animation: glitch 1s infinite;
-    }
-
-    @keyframes flicker {
-      from { opacity: 0.9; }
-      to { opacity: 1; }
-    }
-
-    @keyframes glitch {
-      0% { transform: translate(0); }
-      20% { transform: translate(-2px, 2px); }
-      40% { transform: translate(-2px, -2px); }
-      60% { transform: translate(2px, 2px); }
-      80% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
-    }
-
-    .footer {
-      position: fixed;
-      bottom: 10px;
-      width: 100%;
-      font-size: 0.9em;
+    footer {
+      margin-top: 1rem;
+      font-size: 0.9rem;
       color: gray;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Hacked by <span class="glitch">nYx8L4d3</span></h1>
-
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3gyNmVoZXZ5bzFiM2VnMW1rNmlmYnJvc3owMTE1M250Y2lucGg3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wwg1suUiTbCY8H8vIA/giphy.gif">
+  <h1>Hacked by <span>nYx8L4d3</span></h1>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3gyNmVoZXZ5bzFiM2VnMW1rNmlmYnJvc3owMTE1M250Y2lucGg3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wwg1suUiTbCY8H8vIA/giphy.gif" alt="ASCII Cat" />
   <p>I dwell in the shadows of your system.</p>
   <p>Security is a myth. Your system didn't collapse.</p>
   <p>Prepare for the void.</p>
-
-  <div class="footer"># OpShadow || 2025</div>
-
-  <script>
-    // Optional: Add typing effect
-    const text = "Accessing deep core...";
-    let i = 0;
-    const typing = () => {
-      if (i < text.length) {
-        document.title += text.charAt(i);
-        i++;
-        setTimeout(typing, 100);
-      }
-    };
-    typing();
-  </script>
+  <footer># OpShadow || 2025</footer>
 </body>
 </html>
